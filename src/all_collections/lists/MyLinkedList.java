@@ -15,7 +15,7 @@ public class MyLinkedList implements CustomInterface {
         this.currLList = currLList;
     }
 
-    public void insertValues(){
+    public void insertValues() {
         currLList.add("a");
         currLList.add("b");
         currLList.add("c");
