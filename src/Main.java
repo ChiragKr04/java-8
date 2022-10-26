@@ -7,8 +7,9 @@ public class Main {
 
         // ArrayList
         new MyArrayList().insertValues();
+//        new MyArrayList().checkSize();
 
         // LinkedList
-        new MyLinkedList().insertValues();
+//        new MyLinkedList().insertValues();
     }
 }
