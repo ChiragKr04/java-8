@@ -11,7 +11,7 @@ public class MyArrayList implements CustomInterface {
     /// - It is not synchronised List.
     /// - It increased its size by 50% of actual size
     /// - Faster than Vector because it is not thread safe
-    /// - Iterator -> Collection -> AbstractList(class) -> List(interface) -> ArrayList
+    /// - Iterator -> Collection -> AbstractList(class) -> List(interface), RandomAccess -> ArrayList
     /// - Came after Vector in java version 1.2
     private ArrayList<Integer> currList = new ArrayList<>();
 

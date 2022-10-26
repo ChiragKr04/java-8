@@ -10,6 +10,6 @@ public class Main {
 //        new MyArrayList().checkSize();
 
         // LinkedList
-//        new MyLinkedList().insertValues();
+        new MyLinkedList().insertValues();
     }
 }
