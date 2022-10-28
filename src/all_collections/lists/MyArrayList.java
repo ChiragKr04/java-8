@@ -84,6 +84,10 @@ public class MyArrayList implements CustomInterface {
 
     }
 
+    /// Was checking if array size actually grows by 50%
+    /// Conclusion: Size does increase but when we do .toArray()
+    /// it returns the copy of array with all the elements in it
+    /// not the actual size of array with it.
     public void checkSize() {
         for (int i = 0; i < 12; i++) {
             currList.add(i);
@@ -91,6 +95,22 @@ public class MyArrayList implements CustomInterface {
         Object[] narr = currList.toArray();
         narr[13] = 80;
         System.out.println(narr[13]);
+    }
+
+    public void stackOperation() {
+        stackArr.push(10);
+        stackArr.push(20);
+        stackArr.push(30);
+        stackArr.push(40);
+
+        /// Breaks the actual logic of Stack data structure.
+        /// Why? Rushed java code at first release. Poorly written.
+        stackArr.remove(2);
+
+        for (int val :
+                stackArr) {
+            System.out.println(val);
+        }
     }
 
 }
