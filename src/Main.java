@@ -1,15 +1,23 @@
 import all_collections.lists.MyArrayList;
 import all_collections.lists.MyLinkedList;
+import all_collections.queues.MyQueue;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+
 
         // ArrayList
-        new MyArrayList().insertValues();
+        MyArrayList myArrayList = new MyArrayList();
+//        new MyArrayList().insertValues();
 //        new MyArrayList().checkSize();
+//        myArrayList.stackOperation();
 
         // LinkedList
-        new MyLinkedList().insertValues();
+        MyLinkedList myLinkedList = new MyLinkedList();
+//        myLinkedList.insertValues();
+
+        // Priority Queue
+        MyQueue myQueue = new MyQueue();
+        myQueue.priorityQOp();
     }
 }
