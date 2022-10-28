@@ -29,13 +29,14 @@ class MyDelayQueue implements Delayed {
     @Override
     public int compareTo(Delayed obj)
     {
-        if (this.time < ((MyDelayQueue)obj).time) {
-            return -1;
-        }
-        if (this.time > ((MyDelayQueue)obj).time) {
-            return 1;
-        }
-        return 0;
+//        if (this.time < ((MyDelayQueue)obj).time) {
+//            return -1;
+//        }
+//        if (this.time > ((MyDelayQueue)obj).time) {
+//            return 1;
+//        }
+//        return 0;
+        return Long.compare(this.time, ((MyDelayQueue) obj).time);
     }
 
     // Implementing toString()
@@ -52,6 +53,11 @@ class MyDelayQueue implements Delayed {
 }
 
 public class MyDelayQOperation {
+
+    /// Delay Queue
+    /// It removes and stores on the basis of time.
+    /// Removes the element which has the smallest time
+    /// Stores the element first which has the smallest time
     private DelayQueue<MyDelayQueue> DQ
             = new DelayQueue<>();
 
@@ -60,8 +66,8 @@ public class MyDelayQOperation {
 
         // Add numbers to end of DelayQueue
         // using add() method
-        DQ.add(new MyDelayQueue("A", 1));
-        DQ.add(new MyDelayQueue("B", 2));
+        DQ.add(new MyDelayQueue("A", 5));
+        DQ.add(new MyDelayQueue("B", 1));
         DQ.add(new MyDelayQueue("C", 3));
         DQ.add(new MyDelayQueue("D", 4));
         DQ.add(new MyDelayQueue("E", 6));
