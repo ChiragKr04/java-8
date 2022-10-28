@@ -1,5 +1,6 @@
 import all_collections.lists.MyArrayList;
 import all_collections.lists.MyLinkedList;
+import all_collections.queues.MyDelayQOperation;
 import all_collections.queues.MyQueue;
 
 public class Main {
@@ -18,6 +19,13 @@ public class Main {
 
         // Priority Queue
         MyQueue myQueue = new MyQueue();
-        myQueue.priorityQOp();
+//        myQueue.priorityQOp();
+//        myQueue.blockingQOp();
+
+        // Delay Queue
+        MyDelayQOperation myDelayQ = new MyDelayQOperation();
+        myDelayQ.delayOperation();
+
+
     }
 }
