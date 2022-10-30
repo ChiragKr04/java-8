@@ -1,5 +1,6 @@
 import all_collections.lists.MyArrayList;
 import all_collections.lists.MyLinkedList;
+import all_collections.maps.MyMaps;
 import all_collections.queues.MyDelayQOperation;
 import all_collections.queues.MyQueue;
 import all_collections.sets.MySets;
@@ -27,10 +28,17 @@ public class Main {
 //        MyDelayQOperation myDelayQ = new MyDelayQOperation();
 //        myDelayQ.delayOperation();
 
+        // Sets
         MySets mySets = new MySets();
-        mySets.hashSetOp();
-        mySets.linkedHSetOp();
-        mySets.treeHSetOp();
+//        mySets.hashSetOp();
+//        mySets.linkedHSetOp();
+//        mySets.treeHSetOp();
+
+        // Hash Map
+        MyMaps myMaps = new MyMaps();
+        myMaps.hashMapOp();
+        myMaps.linkedHashMapOp();
+        myMaps.treeMapOp();
 
     }
 }
