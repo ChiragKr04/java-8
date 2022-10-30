@@ -26,6 +26,15 @@ public class MyMaps {
         hashMap.put(20,"twenty");
         hashMap.put(null,"null");
 
+        // Looping on maps
+        for (Map.Entry<Integer, String> singleMap :
+                hashMap.entrySet()) {
+            System.out.println("Key is: "+singleMap.getKey()+", value is: "+singleMap.getValue());
+        }
+
+        // removing from map
+        System.out.println(hashMap.remove(30));
+
         System.out.println(hashMap);
 
     }
