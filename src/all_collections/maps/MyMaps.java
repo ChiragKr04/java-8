@@ -16,7 +16,7 @@ public class MyMaps {
 
     // Hash Map
     // Stores key value pair. Cannot store null key
-    // Stores in sorted manner
+    // Stores in sorted manner. Sort on 'Keys' of hashmap
     private Map<Integer, String> treeMap = new TreeMap();
 
     public void hashMapOp() {
