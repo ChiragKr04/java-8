@@ -2,6 +2,7 @@ import all_collections.lists.MyArrayList;
 import all_collections.lists.MyLinkedList;
 import all_collections.queues.MyDelayQOperation;
 import all_collections.queues.MyQueue;
+import all_collections.sets.MySets;
 
 public class Main {
     public static void main(String[] args) {
@@ -23,9 +24,13 @@ public class Main {
 //        myQueue.blockingQOp();
 
         // Delay Queue
-        MyDelayQOperation myDelayQ = new MyDelayQOperation();
-        myDelayQ.delayOperation();
+//        MyDelayQOperation myDelayQ = new MyDelayQOperation();
+//        myDelayQ.delayOperation();
 
+        MySets mySets = new MySets();
+        mySets.hashSetOp();
+        mySets.linkedHSetOp();
+        mySets.treeHSetOp();
 
     }
 }
