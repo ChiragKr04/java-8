@@ -1,10 +1,8 @@
 package all_collections.lists;
 
-import all_collections.my_interfaces.CustomInterface;
-
 import java.util.*;
 
-public class MyArrayList implements CustomInterface {
+public class MyArrayList {
 
     /// Array List
     /// - Internally uses static array

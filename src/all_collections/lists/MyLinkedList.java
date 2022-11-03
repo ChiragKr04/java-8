@@ -1,11 +1,9 @@
 package all_collections.lists;
 
-import all_collections.my_interfaces.CustomInterface;
-
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class MyLinkedList implements CustomInterface {
+public class MyLinkedList {
     /// Linked List
     /// - It is not thread safe.
     /// - It's size is always empty when initialised
